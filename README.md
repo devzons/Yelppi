@@ -18,3 +18,8 @@ Each Compground has:
 * Add in body-parser
 * Setup route to show form
 * Add basic unstyled form
+
+## Style the campground page
+
+* Add a better header/title
+* Make campground display in a grid

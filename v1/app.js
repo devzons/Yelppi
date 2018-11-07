@@ -8,6 +8,12 @@ app.set("view engine", "ejs");
 var campgrounds = [
   {name: "Salmon Creek", image: "https://pixabay.com/get/ef3cb00b2af01c22d2524518b7444795ea76e5d004b0144594f5c27ba7e8b4_340.jpg"},
   {name: "Copper River", image: "https://pixabay.com/get/e136b80728f31c22d2524518b7444795ea76e5d004b0144594f5c27ba7e8b4_340.jpg"},
+  {name: "Indian Creek", image: "https://pixabay.com/get/e834b5062cf4033ed1584d05fb1d4e97e07ee3d21cac104491f1c47aa5edb0b9_340.jpg"},
+  {name: "Salmon Creek", image: "https://pixabay.com/get/ef3cb00b2af01c22d2524518b7444795ea76e5d004b0144594f5c27ba7e8b4_340.jpg"},
+  {name: "Copper River", image: "https://pixabay.com/get/e136b80728f31c22d2524518b7444795ea76e5d004b0144594f5c27ba7e8b4_340.jpg"},
+  {name: "Indian Creek", image: "https://pixabay.com/get/e834b5062cf4033ed1584d05fb1d4e97e07ee3d21cac104491f1c47aa5edb0b9_340.jpg"},
+  {name: "Salmon Creek", image: "https://pixabay.com/get/ef3cb00b2af01c22d2524518b7444795ea76e5d004b0144594f5c27ba7e8b4_340.jpg"},
+  {name: "Copper River", image: "https://pixabay.com/get/e136b80728f31c22d2524518b7444795ea76e5d004b0144594f5c27ba7e8b4_340.jpg"},
   {name: "Indian Creek", image: "https://pixabay.com/get/e834b5062cf4033ed1584d05fb1d4e97e07ee3d21cac104491f1c47aa5edb0b9_340.jpg"}
 ];
 
