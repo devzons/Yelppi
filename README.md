@@ -23,3 +23,8 @@ Each Compground has:
 
 * Add a better header/title
 * Make campground display in a grid
+
+## Style the Navbar and Form
+
+* Add a navbar to all templates
+* Style the new campground form
