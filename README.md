@@ -6,3 +6,8 @@
 Each Compground has:
 * Name
 * Image
+
+## Layout and Bootstrap styling
+
+* Create our header and footer partials
+* Add in Bootstrap
