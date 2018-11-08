@@ -131,7 +131,7 @@ kid.save(function(err, cat) {
     }
 });
 
-// Method 2
+// Method 2 --- simpler versioncd 
 Cat.create({
     name: "Kiddy",
     age: 15,
