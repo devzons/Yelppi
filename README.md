@@ -169,3 +169,20 @@ Cat.find({}, function(err, cats) {
 * Install and configure mongoose
 * Setup campground model
 * Use campground model inside of our routes
+
+
+## show page
+
+* Review the RESTful routes we've seen so far
+* Add description to our campground model
+* Show db.collection.drop()
+* Add a show route/template
+
+RESTFUL ROUTES (camp: campground)
+
+name        url             verb        description
+========================================================================
+INDEX       /camps           GET         Display a list of all camp
+NEW         /camps/new       GET         Display form to make a new camp
+CREATE      /camps           POST        Add new camp to DB
+SHOW        /camps/:id       GET         Shows info about one camp
