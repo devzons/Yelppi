@@ -70,3 +70,15 @@ M : MongoDB
 E : Express
 A : Angular
 N : Node
+
+## Mongo Commands
+
+* mongod
+* mongo
+* help
+* show dbs
+* use
+* insert
+* find
+* update
+* remove
