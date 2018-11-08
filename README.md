@@ -162,5 +162,10 @@ Cat.find({}, function(err, cats) {
     }
 });
 
-
 ```
+
+## Add Mongoose
+
+* Install and configure mongoose
+* Setup campground model
+* Use campground model inside of our routes
