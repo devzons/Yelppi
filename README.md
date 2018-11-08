@@ -82,3 +82,85 @@ N : Node
 * find
 * update
 * remove
+* 
+**=================
+```
+use demo
+show dbs
+db.dogs.insert({name: "Rusty", breed: "Mutt"})
+show collections
+db.dogs.find()
+db.dogs.find({name: "Rusty"})
+db.dogs.update({name: "Coco"}, {breed: "Jack"})
+db.dogs.update({name: "Rusty"}, {$set: {name: "Tater", isCute: true}})
+```
+
+## Mongoose
+
+* Mongoose is elegant mongodb object modeling for node.js
+* Interact with a Mongo Database with Mongoose
+* 
+```
+var mongoose = require("mongoose");
+mongoose.connect("mongodb://localhost/cat_app");//if not found, create automatically
+
+// define pattern
+var catSchema = new mongoose.Schema({
+    name: String,
+    age: Number,
+    temperament: String
+});
+
+var Cat = mongoose.model("Cat", catSchema);
+// Cat.create(), Cat.update(), Cat.find(), ..
+
+// adding a new cat to the DB ================
+// Method 1
+var kid = new Cat({
+    name: "Kiddy",
+    age: 11,
+    temperament: "Grouchy"
+});
+
+kid.save(function(err, cat) {
+    if(err){
+        console.log("SOMETHING WRONG!");
+    } else {
+        console.log("SAVED!!");
+        console.log(cat);
+    }
+});
+
+// Method 2
+Cat.create({
+    name: "Kiddy",
+    age: 15,
+    temperament: "Bland"
+}, function(err, cat){
+    if(err){
+        console.log("SOMETHING WRONG!");
+    } else {
+        console.log("SAVED!!");
+        console.log(cat);
+    }
+});
+
+$ node cats.js
+
+$ mongo
+> show dbs
+> db.cats.find()
+
+// retrieve all cats from the DB and console.log each one ====
+
+Cat.find({}, function(err, cats) {
+    if(err){
+       console.log("ERROR!");
+       console.log(err);
+    } else {
+       console.log(cats);
+    }
+});
+
+
+```
